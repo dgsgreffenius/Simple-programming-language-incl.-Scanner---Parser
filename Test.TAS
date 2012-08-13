@@ -1,0 +1,47 @@
+program Test {
+	constant six := 2 * 3; // Lab 8 constants
+	constant five := 5;
+	int array[5]; // Lab 10 arrays
+	int i;
+	string s; // Lab 8 string data type
+	char c; // Lab 11 char data type
+
+	void SumUp() {
+		int sum;
+		sum := 0;
+		while (i > 0) { sum := sum + i; i := i - 1; }
+		write sum;
+	}
+
+	void Main() {
+		read i;
+		int j;
+		for j := 1 to 5
+			do write j, i;
+		
+		array[2] := 30;
+		j := array[2] - 15;
+		write j;
+		write array[2];
+
+		j := 1;
+		do {
+			write j;
+			j := j + 1;
+			} while(j < 5);
+
+		s := "hello";
+		write s, s;
+		
+		c := 'a';
+		write c, s, i;
+		
+		if(3 != 4) write "true";
+			int a, b, max;
+		read a; read b;
+		max := (a > b) ? a : b; // Lab 7 condional Statement
+		write max;
+	
+	}
+}
+
